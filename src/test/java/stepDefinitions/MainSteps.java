@@ -12,10 +12,9 @@ public class MainSteps {
         System.out.println("User landed on netbanking page");
         //throw new io.cucumber.java.PendingException();
     }
-    @When("User login into application")
-    public void user_login_into_application() {
-        // Write code here that turns the phrase above into concrete actions
-        System.out.println("User logged into application ");
+    @When("User login into application with {string} and password {string}")
+    public void user_login_into_application_with_and_password(String username, String password) {
+        System.out.println(username + " and password is "+password);
         //throw new io.cucumber.java.PendingException();
     }
     @Then("Home page is displayed")
@@ -24,6 +23,7 @@ public class MainSteps {
         System.out.println("Home page is displayed");
         //throw new io.cucumber.java.PendingException();
     }
+
     @Then("Cards are displayed")
     public void cards_are_displayed() {
         // Write code here that turns the phrase above into concrete actions
