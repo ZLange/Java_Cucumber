@@ -7,7 +7,7 @@
   Background:
 
     Given setup the entries in DB
-    And launch the browser from config variables
+    When launch the browser from config variables
     And hit the homepage URL of banking page
 
   @RegressionTest

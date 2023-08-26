@@ -16,7 +16,7 @@ public class MainSteps {
     public void launch_the_browser_from_config_variables() {
         System.out.println("Browser launched from config variables");
     }
-    @Given("hit the homepage URL of banking page")
+    @When("hit the homepage URL of banking page")
     public void hit_the_homepage_url_of_banking_page() {
         System.out.println("Hit the homepage URL ");
     }
