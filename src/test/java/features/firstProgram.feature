@@ -2,6 +2,14 @@
 
   Feature: Application Login
     Here can be optional description
+
+  # background runs only on this specific feature file
+  Background:
+
+    Given setup the entries in DB
+    And launch the browser from config variables
+    And hit the homepage URL of banking page
+
   @RegressionTest
   Scenario: Admin page login
 

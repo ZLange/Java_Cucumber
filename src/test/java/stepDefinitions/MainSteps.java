@@ -8,6 +8,19 @@ import java.util.List;
 
 // to get this structure just run the test and let it fail, then copy from terminal
 public class MainSteps {
+    @Given("setup the entries in DB")
+    public void setup_the_entries_in_db() {
+        System.out.println("Entries in DB are setup");
+    }
+    @Given("launch the browser from config variables")
+    public void launch_the_browser_from_config_variables() {
+        System.out.println("Browser launched from config variables");
+    }
+    @Given("hit the homepage URL of banking page")
+    public void hit_the_homepage_url_of_banking_page() {
+        System.out.println("Hit the homepage URL ");
+    }
+
     @Given("User is on NetBanking page")
     public void user_is_on_net_banking_page() {
         // Write code here that turns the phrase above into concrete actions
