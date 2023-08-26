@@ -4,6 +4,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 /*
+TestNG is needed to run tests!!!!!
+
 needed annotations in brackets to add feature file(add path), for steps only folder name
 features -> add full path of features file
 glue -> add name of step definition file (code part)
