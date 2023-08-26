@@ -12,7 +12,7 @@ tags - > to select what tests to run and to order them
 plugin -> to generate reports/pretty adds colors
 dryRun -> if true won't run tests if something is missing
  */
-@CucumberOptions(features = "src/test/java/features", dryRun = true,
+@CucumberOptions(features = "src/test/java/features",
         glue = "stepDefinitions", monochrome = true, tags="@SmokeTest or @RegressionTest",
         plugin = {"pretty", "html:target/cucumber.html", "json:target/cucumber.json"})
 // to run tests with cucumber need to extend with class -> AbstractTestNGCucumberTests
