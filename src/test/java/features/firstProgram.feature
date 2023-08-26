@@ -2,7 +2,7 @@
 
   Feature: Application Login
     Here can be optional description
-
+  @RegressionTest
   Scenario: Admin page login
 
     Given User is on NetBanking page
@@ -11,6 +11,7 @@
     And Cards are displayed
 
   # Reusable
+  @MobileTest
   Scenario: User page login
 
     Given User is on NetBanking page
@@ -20,6 +21,7 @@
     And Cards are displayed
 
   # parametrize
+  @SmokeTest @RegressionTest
   Scenario Outline: User page login
 
     Given User is on NetBanking page
@@ -32,7 +34,8 @@
     | debituser | hello15822 |
     | credituser | 46464465b |
 
-  #
+  # fill data in more fields
+  @SmokeTest
   Scenario: User page Sign Up
 
     Given User is on Practice page
