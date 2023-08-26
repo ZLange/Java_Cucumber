@@ -17,6 +17,19 @@ public class MainSteps {
         System.out.println(username + " and password is "+password);
         //throw new io.cucumber.java.PendingException();
     }
+
+//    @When("User login into application with {string} and password {string} combination")
+//    public void user_login_into_application_with_and_password_combination(String username2, String password2) {
+//        System.out.println(username2 + " and password is "+password2);
+//        //throw new io.cucumber.java.PendingException();
+//    }
+    // to work for any data type not just strings
+    @When("^User login into application with (.+) and password (.+) combination$")
+    public void user_login_into_application_with_and_password_combination(String username2, String password2) {
+        System.out.println(username2 + " and password is "+password2);
+        //throw new io.cucumber.java.PendingException();
+    }
+
     @Then("Home page is displayed")
     public void home_page_is_displayed() {
         // Write code here that turns the phrase above into concrete actions
