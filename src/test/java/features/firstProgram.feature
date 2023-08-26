@@ -15,6 +15,7 @@
 
     Given User is on NetBanking page
     When User login into application with "user" and password "0258"
+#    When User login into application with user and password 0258
     Then Home page is displayed
     And Cards are displayed
 
